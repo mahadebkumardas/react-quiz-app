@@ -26,7 +26,7 @@ function App() {
               <Route path="/quiz/:id" Component={Quiz} />
               <Route path="/result/:id" Component={Result} />
             </Route>
-            <Route path="*" element={<PageNotFound />} />
+            <Route path="*" Component={PageNotFound} />
           </Routes>
         </Layout>
       </AuthProvider>
